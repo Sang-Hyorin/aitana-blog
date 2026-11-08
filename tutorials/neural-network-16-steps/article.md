@@ -4,8 +4,6 @@
 
 [打开可点击的流程图阅读版](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/)
 
-这是一套受 Qwen 前馈模块启发的**标量回归教学网络**，不是完整的 Qwen 或 Transformer：保留 bias 便于理解，使用平方误差预测数值；真实语言模型还需要 token、embedding、attention、归一化、残差连接与下一 token 的交叉熵目标。
-
 ## 如何衔接这些步骤
 
 第 1–4 步使用学习率 1/16；第 5 步加入乘法支路后改为 1/1024，并沿用到后面。各页从标明的初始参数重新演示，**不是把上一页更新后的参数继续作为下一页的初值**。第 7–8 步是相同网络的两种写法，结果完全一致。第 9 步起使用两个训练样本。第 11–12 步分别从相同初值演示 Adam 和 AdamW。
