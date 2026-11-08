@@ -46,7 +46,8 @@ flowchart TD
   N1 --> N2
   N2 --> N3
   N3 --> N4
-  N4 -->|下一轮| N1```
+  N4 -->|下一轮| N1
+```
 
 <details>
 <summary>1. 训练样本</summary>
@@ -123,7 +124,8 @@ flowchart TD
   N1 --> N2
   N2 --> N3
   N3 --> N4
-  N4 -->|下一轮| N1```
+  N4 -->|下一轮| N1
+```
 
 <details>
 <summary>1. 输入与初始参数</summary>
@@ -201,7 +203,8 @@ flowchart TD
   N1 --> N2
   N2 --> N3
   N3 --> N4
-  N4 -->|下一轮| N1```
+  N4 -->|下一轮| N1
+```
 
 <details>
 <summary>1. 输入与初始参数</summary>
@@ -287,7 +290,8 @@ flowchart TD
   N3 --> N4
   N4 --> N5
   N5 --> N6
-  N6 -->|下一轮| N1```
+  N6 -->|下一轮| N1
+```
 
 <details>
 <summary>1. ① 输入 x₁、x₂ 与目标 y</summary>
@@ -414,7 +418,8 @@ flowchart TD
   N6 --> N7
   N7 --> N8
   N8 -->|下一轮| N1
-  N8 --> N3```
+  N8 --> N3
+```
 
 <details>
 <summary>1. 输入 x₁、x₂；目标 y</summary>
@@ -570,7 +575,8 @@ flowchart TD
   N7 --> N8
   N8 --> N9
   N9 -->|下一轮| N1
-  N9 --> N3```
+  N9 --> N3
+```
 
 <details>
 <summary>1. 输入 x₁、x₂；目标 y</summary>
@@ -745,7 +751,8 @@ flowchart TD
   N7 --> N8
   N8 --> N9
   N9 -->|下一轮| N1
-  N9 --> N3```
+  N9 --> N3
+```
 
 <details>
 <summary>1. 同一输入 x₁、x₂；目标 y</summary>
@@ -933,7 +940,8 @@ flowchart TD
   N7 --> N8
   N8 --> N9
   N9 -->|下一轮| N1
-  N9 --> N3```
+  N9 --> N3
+```
 
 <details>
 <summary>1. 输入向量 x = [2, 1]ᵀ；目标 y = 6</summary>
@@ -1138,7 +1146,8 @@ flowchart TD
   N7 --> N8
   N8 --> N9
   N9 -->|下一轮| N1
-  N9 --> N3```
+  N9 --> N3
+```
 
 <details>
 <summary>1. 新增第二个样本 → 一个 batch</summary>
@@ -1353,7 +1362,8 @@ flowchart TD
   N8 --> N9
   N9 --> N10
   N10 -->|下一轮| N1
-  N10 --> N3```
+  N10 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
@@ -1597,7 +1607,8 @@ flowchart TD
   N8 --> N9
   N9 --> N10
   N10 -->|下一轮| N1
-  N10 --> N3```
+  N10 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
@@ -1846,7 +1857,8 @@ flowchart TD
   N8 --> N9
   N9 --> N10
   N10 -->|下一轮| N1
-  N10 --> N3```
+  N10 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
@@ -2095,7 +2107,8 @@ flowchart TD
   N10 --> N11
   N11 --> N12
   N12 -->|继续训练| N1
-  N12 --> N3```
+  N12 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
@@ -2389,7 +2402,8 @@ flowchart TD
   N12 --> N13
   N13 --> N14
   N13 -->|未达 patience：继续训练| N1
-  N13 --> N3```
+  N13 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
@@ -2737,7 +2751,8 @@ flowchart TD
   N14 --> N15
   N15 --> N16
   N13 -->|未达 patience：继续训练| N1
-  N13 --> N3```
+  N13 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
@@ -3134,7 +3149,8 @@ flowchart TD
   N16 --> N17
   N17 --> N18
   N13 -->|未达 patience：继续训练| N1
-  N13 --> N3```
+  N13 --> N3
+```
 
 <details>
 <summary>1. 保留两个样本 → 一个 batch</summary>
