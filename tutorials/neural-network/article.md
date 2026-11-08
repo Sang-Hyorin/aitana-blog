@@ -2,7 +2,7 @@
 
 作者：Xingyu Liu（Aitana）
 
-[打开可点击的流程图阅读版](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/)
+[打开可点击的流程图阅读版](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/)
 
 ## 如何衔接这些步骤
 
@@ -33,7 +33,7 @@
 
 只用一个可训练权重，完整走通预测、损失、求导和更新。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-01.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-01.html)
 
 ```mermaid
 flowchart TD
@@ -111,7 +111,7 @@ L = (ŷ − y)² = (4 − 6)² = 4
 
 增加一个输入和一个权重，仍然预测一个数。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-02.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-02.html)
 
 ```mermaid
 flowchart TD
@@ -190,7 +190,7 @@ g₁ = 2(5 − 6) × 2 = −4，g₂ = 2(5 − 6) × 1 = −2
 
 在加权求和后增加可训练的偏置 b。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-03.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-03.html)
 
 ```mermaid
 flowchart TD
@@ -273,7 +273,7 @@ b 每增加 1，预测也增加 1，所以这里乘以 1。两个权重各自用
 
 保留加权求和 z，在预测前插入 SiLU(z)。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-04.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-04.html)
 
 ```mermaid
 flowchart TD
@@ -395,7 +395,7 @@ b → 0.1326
 
 保留原支路，再增加 u = a₁x₁ + a₂x₂ + c，与 SiLU(z) 相乘。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-05.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-05.html)
 
 ```mermaid
 flowchart TD
@@ -550,7 +550,7 @@ L = (ŷ − y)²
 
 把上一页的乘积命名为中间特征 h，新增输出权重 v。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-06.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-06.html)
 
 ```mermaid
 flowchart TD
@@ -726,7 +726,7 @@ v → 1.0100
 
 复制一套独立参数形成第二个并行通道，输出是两项加权和。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-07.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-07.html)
 
 ```mermaid
 flowchart TD
@@ -915,7 +915,7 @@ vᵢ → 0.0994
 
 不增加参数，把重复的逐通道计算组织成矩阵运算。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-08.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-08.html)
 
 ```mermaid
 flowchart TD
@@ -1121,7 +1121,7 @@ W 有 4 个数，A 有 4 个数，b、c、v 各有 2 个数，共 14 个参数�
 
 网络不变，新增第二个训练样本，用平均梯度统一更新一次。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-09.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-09.html)
 
 ```mermaid
 flowchart TD
@@ -1335,7 +1335,7 @@ Lbatch = (L₁ + L₂)/2 ≈ 0.9426
 
 保存历史梯度方向，让当前更新参考过去的方向。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-10.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-10.html)
 
 ```mermaid
 flowchart TD
@@ -1580,7 +1580,7 @@ v₁ = 1.0010 − (1/1024)×(-1.4206)
 
 用梯度的一阶与二阶矩调整更新步幅，并校正零初始化偏差。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-11.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-11.html)
 
 ```mermaid
 flowchart TD
@@ -1830,7 +1830,7 @@ v₁ → 1.00195
 
 在 Adam 更新中单独加入向零收缩的权重衰减项。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-12.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-12.html)
 
 ```mermaid
 flowchart TD
@@ -2076,7 +2076,7 @@ m̂₂/(√ŝ₂ + ε) ≈ -0.9976
 
 新增不参与梯度更新的样本，用于检查和选择模型。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-13.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-13.html)
 
 ```mermaid
 flowchart TD
@@ -2367,7 +2367,7 @@ Lval = (ŷ − 5)² ≈ 0.000201
 
 记录验证损失，连续无改善则停止，恢复最佳检查点。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-14.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-14.html)
 
 ```mermaid
 flowchart TD
@@ -2712,7 +2712,7 @@ min_delta 规定多大的下降才算明显改善；patience 允许短暂波动�
 
 模型选择结束后，用未参与训练与选择的测试样本评估。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-15.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-15.html)
 
 ```mermaid
 flowchart TD
@@ -3106,7 +3106,7 @@ Ltest = 两个平方误差的平均值
 
 固定选好的参数，对没有目标答案的新输入只做前向预测。
 
-[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network-16-steps/step-16.html)
+[点击式流程图](https://sang-hyorin.github.io/aitana-blog/tutorials/neural-network/step-16.html)
 
 ```mermaid
 flowchart TD
